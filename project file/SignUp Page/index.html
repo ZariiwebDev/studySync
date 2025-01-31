@@ -1,0 +1,64 @@
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SignUp | StudySync</title>
+    <link rel="shortcut icon" href="../images/StudySyn.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-target">STUDYSYNC SIGNUP</h1>
+        <div class="first">
+            <img class="img  magnet" src="../images/4630062.jpg" alt="signup">
+        </div>
+        <div class="secound">
+            <form id="form" id="forms"> 
+            <h1>Registration</h1>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+                <div class="error txt" id="txt1"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div class="error txt" id="txt2"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password"name="password" type="password">
+                <div class="error txt" id="txt3"></div>
+            </div>
+            <div class="input-control">
+                <label for="password2">Password again</label>
+                <input id="password2"name="password2" type="password">
+                <div class="error txt" id="txt4"></div>
+            </div>
+            <button type="submit" id="submit">Sign Up</button>
+        </form>
+    </div>
+</div>
+
+       <!--  Gsap is needed for Basic Effects -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+       
+       <!-- Scroll Trigger is needed for Scroll Effects -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+       
+       <!-- Three.js is needed for 3d Effects -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+       
+       <!-- ControlKit is needed for Debug Panel -->
+       <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+       <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> 
+       
+       <script src="animate.js"></script>
+    </body>
+    </html>
