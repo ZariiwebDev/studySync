@@ -211,6 +211,9 @@ header #theme-Switcher svg {
     display: none;
     animation: left 1s 1 alternate ease-in alternate-reverse;
 }
+.menuMob{
+    display: none;
+}
 @keyframes left {
     0%{
         opacity: 0;
@@ -234,7 +237,31 @@ header #theme-Switcher svg {
         padding: 2rem;
     }   
     .menu{
+        position: relative;
         display: block;
+    }
+    .menuMob{
+        z-index: 100000000;
+        border-top-right-radius: 12px;
+        padding: 2rem;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: -12.93rem;
+        background-color: #202020e3;
+        height: 80vh;
+        display: none;
+    }
+    .menuMob a {
+        padding: 12px 32px;
+        text-decoration: none;
+        color: white;
+        margin-bottom: 1rem;
+        &:hover{
+            background-color: #3653e3;
+            border-radius: 11px;
+        }
     }
 }
 @media (min-width:1024px)
