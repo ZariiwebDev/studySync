@@ -287,8 +287,35 @@ header #theme-Switcher svg {
     #icon{
         width: .8rem;
     }
-    .menu{
+    /* .menu{
         width:1rem;       
+    } */
+    .menu{
+        position: relative;
+        display: block;
+    }
+    .menuMob{
+        z-index: 100000000;
+        border-top-right-radius: 12px;
+        padding: 2rem;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: -12.93rem;
+        background-color: #202020e3;
+        height: 20vh;
+        display: none;
+    }
+    .menuMob a {
+        padding: 12px 32px;
+        text-decoration: none;
+        color: white;
+        margin-bottom: 1rem;
+        &:hover{
+            background-color: #3653e3;
+            border-radius: 11px;
+        }
     }
 }
 @media  (width>1442px) {
